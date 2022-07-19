@@ -3,7 +3,6 @@
 
 
 def magic_calculation(a, b):
-    """Magic Calculation"""
     output = 0
     for value in range(1, 3):
         try:
