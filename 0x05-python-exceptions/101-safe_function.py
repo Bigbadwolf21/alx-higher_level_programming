@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 # 101-safe_function.py
 
-import sys
+from sys import stderr
+
 
 def safe_function(fct, *args):
     """Executes a function safely.
@@ -10,10 +11,10 @@ def safe_function(fct, *args):
         args: Arguments for fct.
     Returns:
         If an error occurs - None.
-        Otherwise - the result of the call to fct."""
+        Otherwise - the result of the call to fct.
+    """
     try:
-        output = fct(*args)
-        return (output)
-    except:
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
-        return (None)
+        return fct(*args)
+    except (ZeroDivisionError, IndexError, TypeError, ValueError) as e:
+        stderr.write("Exception: {}\n".format(e))
+        return None
