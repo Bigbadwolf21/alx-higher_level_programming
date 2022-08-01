@@ -3,6 +3,8 @@
 """Defines an empty class BaseGeometry.
 """
 
+
 class BaseGeometry:
-    """Empty base geometry"""
+    """Represent base geometry.
+    """
     pass
