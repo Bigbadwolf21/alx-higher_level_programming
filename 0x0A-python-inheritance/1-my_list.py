@@ -1,17 +1,14 @@
 #!/usr/bin/python3
-# 2-is_same_class.py
-"""Defines a class-checking function."""
+# 1-my_list.py
+"""Defines an inherited list class MyList.
+"""
 
 
-def is_same_class(obj, a_class):
-    """Check if an object is exactly an instance of a given class.
-    Args:
-        obj (any): The object to check.
-        a_class (type): The class to match the type of obj to.
-    Returns:
-        If obj is exactly an instance of a_class - True.
-        Otherwise - False.
+class MyList(list):
+    """Implements sorted printing for the built-in list class.
     """
-    if type(obj) == a_class:
-        return True
-    return False
+
+    def print_sorted(self):
+        """Print a list in sorted ascending order.
+    """
+        print(sorted(self))
