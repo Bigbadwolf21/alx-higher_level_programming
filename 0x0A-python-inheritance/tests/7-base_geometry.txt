@@ -1,6 +1,3 @@
-# 7-base_geometry.txt
-
-=============================
 How to Use 7-base_geometry.py
 =============================
 
@@ -96,7 +93,7 @@ But, if ``value`` is not an integer, a ``TypeError`` is raised.
     Traceback (most recent call last):
     TypeError: and another must be an integer
 
-::
+[O::
 
     >>> bg.integer_validator("more invalid testing", {3, 4})
     Traceback (most recent call last):
@@ -147,3 +144,4 @@ type will be printed.
     >>> bg.integer_validator({"a": 1}, (1, 2))
     Traceback (most recent call last):
     TypeError: {'a': 1} must be an integer
+
