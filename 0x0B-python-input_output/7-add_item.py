@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """Saving arguments to a list"""
 import sys
 
