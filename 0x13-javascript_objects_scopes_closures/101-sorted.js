@@ -7,5 +7,5 @@ for (let key in dict) {
   } else {
     newDict[dict[key]].push(key);
   }
-}
+};
 console.log(newDict);
